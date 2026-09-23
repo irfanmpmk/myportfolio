@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Mohamed Irfan | Senior Full-Stack & Cloud Systems Engineer",
@@ -615,53 +616,7 @@ export default function PortfolioPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <form className="lg:col-span-2 space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-mono uppercase text-slate-400 mb-1">Your Name</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="e.g. John Doe"
-                    className="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-mono uppercase text-slate-400 mb-1">Work Email</label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="john@company.com"
-                    className="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-mono uppercase text-slate-400 mb-1">Project Scope</label>
-                <input
-                  type="text"
-                  placeholder="e.g. Enterprise ERP Dashboard, Shopify App Development, AWS/Next.js Migration"
-                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-mono uppercase text-slate-400 mb-1">Details / Timeline</label>
-                <textarea
-                  rows={4}
-                  placeholder="Brief overview of objectives, required features, or target milestones..."
-                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="px-8 py-3.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-lg transition"
-              >
-                Send Project Inquiry
-              </button>
-            </form>
+            <ContactForm />
 
             <div className="p-6 rounded-xl border border-slate-800 bg-slate-900/40 space-y-4 h-fit">
               <h3 className="font-semibold text-white">Direct Contacts</h3>
