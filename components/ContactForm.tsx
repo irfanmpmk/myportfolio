@@ -18,6 +18,18 @@ export default function ContactForm() {
     // Get your free access key at https://web3forms.com in 10 seconds, or use your email key
     formData.append("access_key", "8a0733ed-fe38-4ae9-b226-82ef9b33fe95"); 
 
+// 1. Set a clean, professional email subject line
+formData.append("subject", "New Project Inquiry from irfanmpmk.xyz");
+
+// 2. Customize the sender header
+formData.append("from_name", "Portfolio Inquiry (irfanmpmk.xyz)");
+
+// 3. Custom notification intro text
+formData.append(
+  "message_header",
+  "Hi Irfan,\n\nA new contact form has been submitted on your personal portfolio website. Details below."
+);
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
