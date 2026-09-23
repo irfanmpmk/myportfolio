@@ -16,7 +16,7 @@ export default function ContactForm() {
 
     // Using Web3Forms free public endpoint (or replace with your Formspree/Formbold endpoint)
     // Get your free access key at https://web3forms.com in 10 seconds, or use your email key
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); 
+    formData.append("access_key", "8a0733ed-fe38-4ae9-b226-82ef9b33fe95"); 
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
